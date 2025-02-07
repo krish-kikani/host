@@ -17,6 +17,13 @@ import java.util.List;
 @RequestMapping(name = "guest")
 public class HostController {
 
+    HostManager hostManager;
+
+    public HostController(HostManager manager) {
+        this.hostManager = manager;
+    }
+
+
     @Autowired
     HostDao HostDao;
 
