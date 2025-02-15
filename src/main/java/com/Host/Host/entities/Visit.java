@@ -8,7 +8,7 @@ import java.time.LocalDateTime;
 @Entity
 @Data
 @Table (name = "guest")
-public class Hosts {
+public class Visit {
 
     @GeneratedValue(strategy = GenerationType.IDENTITY)
 
@@ -26,7 +26,7 @@ public class Hosts {
     private String status;
 
     @Column (name = "count")
-    private int count;
+    private long count;
 
     @Column (name = "created_at")
     private LocalDateTime createdAt;
